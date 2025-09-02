@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuestionActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="normal"
+            tools:text="what country doset this flag belong to?"/>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/image_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            tools:src="@mipmap/ic_launcher"
+            android:contentDescription="Image flag"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                android:progress="5"
+                android:layout_weight="9"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/text_view_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0/9"
+                android:layout_weight="1"
+                android:textSize="15sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:id="@+id/text_view_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Option One"
+            android:minHeight="50dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/text_view_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:minHeight="50dp"
+
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Option Two"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/text_view_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:minHeight="50dp"
+
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Option Three"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/text_view_option_Four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/default_option_border_bg"
+            android:minHeight="50dp"
+
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Option Four"
+            android:textStyle="normal"/>
+
+
+        <Button
+            android:id="@+id/button_check"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_option_border_bg"
+            android:minHeight="50dp"
+            android:text="Check"
+            android:textColor="@color/white"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
